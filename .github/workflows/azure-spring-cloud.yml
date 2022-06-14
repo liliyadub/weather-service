@@ -14,7 +14,7 @@ jobs:
     - name: Build with Maven
       run: mvn package -DskipTests
     - name: Login to Azure Spring Cloud
-      uses: azure/login@v1
+      uses: azure/odl_user_652879@aiw.cloudlabs.ai
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Install Azure Spring Cloud extension
